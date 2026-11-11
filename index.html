@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fcc1d9">
+  <meta name="description" content="You’re invited to a Bride-to-Be Party. November 14, 12 p.m. — Sharm Studio, Navroz Park.">
+  <title>Ms to Mrs — You’re invited</title>
+  <link rel="preload" href="assets/EyesomeScript.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/CormorantGaramond-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="invitation" aria-label="Bride-to-Be Party invitation">
+    <div class="scene" id="invitation-scene">
+      <img class="layer decorations" src="assets/decorations.webp" alt="" aria-hidden="true">
+      <p class="intro">You’re invited to</p>
+      <img class="layer envelope-back" src="assets/envelope-back.webp" alt="" aria-hidden="true">
+
+      <article class="card" id="invitation-card" aria-label="Party details">
+        <svg class="arched-heading" viewBox="0 0 790 235" role="img" aria-label="Bride-to-Be Party">
+          <defs><path id="heading-arc" d="M 172,205 A 230,230 0 0,1 618,205"/></defs>
+          <text><textPath href="#heading-arc" startOffset="50%" text-anchor="middle">BRIDE-TO-BE PARTY</textPath></text>
+        </svg>
+        <h1 class="script title">Ms to Mrs</h1>
+        <p class="date"><span>14<sup>th</sup></span> November</p>
+        <div class="event-frame" aria-hidden="true"></div>
+        <p class="day">Saturday</p>
+        <p class="script activity">A Little art,</p>
+        <p class="script together">A lot of Girhood</p>
+        <p class="time">12p.m start</p>
+        <p class="venue">Sharm Studio<br>Navroz Park</p>
+        <p class="rsvp">Please RSVP before 12nd of November</p>
+      </article>
+
+      <img class="layer envelope-front" src="assets/envelope-front.webp" alt="" aria-hidden="true">
+      <button class="seal" type="button" aria-label="Open invitation" aria-expanded="false" aria-controls="invitation-card">
+        <img src="assets/wax-seal.webp" alt="Wax seal with a poppy flower" draggable="false">
+      </button>
+    </div>
+    <p class="hint" aria-live="polite">Tap the seal to open</p>
+  </main>
+</body>
+</html>

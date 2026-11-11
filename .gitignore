@@ -1,0 +1,5 @@
+tmp/
+.DS_Store
+
+# Original SVG exports are retained locally; the page uses optimized WebP.
+assets/*.svg
