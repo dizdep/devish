@@ -1,0 +1,75 @@
+@font-face {
+  font-family: WishlistScript;
+  src: url('assets/wishlist/EyesomeScript.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: WishlistSerif;
+  src: url('assets/wishlist/CormorantGaramond.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+:root { color-scheme: light; background: #fffbf8; color: #9a1300; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  -webkit-tap-highlight-color: transparent;
+}
+.wishlist-page { width: min(100%, 480px); margin-inline: auto; }
+.wishlist-nav { padding: 18px 20px 12px; }
+.wishlist-nav a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: inherit;
+  text-decoration-color: #ff84b5;
+  text-underline-offset: 5px;
+  font: 14px/1.5 Georgia, serif;
+}
+a:focus-visible { outline: 2px solid #9a1300; outline-offset: 5px; }
+.wishlist-collage {
+  container-type: inline-size;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 1240 / 1748;
+  overflow: hidden;
+  --unit: calc(100cqw / 1240);
+}
+.wishlist-image {
+  position: absolute;
+  left: calc(var(--x) * var(--unit));
+  top: calc(var(--y) * var(--unit));
+  width: calc(var(--w) * var(--unit));
+  height: calc(var(--h) * var(--unit));
+  overflow: hidden;
+}
+.wishlist-image img { position: absolute; display: block; max-width: none; }
+h1 {
+  position: absolute;
+  top: calc(712.3355 * var(--unit));
+  left: calc(325.4737 * var(--unit));
+  width: calc(667.5022 * var(--unit));
+  margin: 0;
+  font: 400 calc(151.855 * var(--unit))/1.16 WishlistScript, cursive;
+  transform: rotate(-4.4194deg);
+  transform-origin: center;
+}
+h1 span { display: block; padding-left: calc(110 * var(--unit)); }
+.wishlist-label {
+  position: absolute;
+  margin: 0;
+  color: #ff84b5;
+  text-align: center;
+  font: 400 calc(var(--size, 34.7982) * var(--unit))/1.16 WishlistSerif, Georgia, serif;
+}
+.manyo { left: calc(426.2257 * var(--unit)); top: calc(418.9402 * var(--unit)); width: calc(308.1314 * var(--unit)); }
+.clinique { left: calc(46.0262 * var(--unit)); top: calc(945.72 * var(--unit)); width: calc(200.8249 * var(--unit)); --size: 32.765; }
+.pouch { left: calc(788.0071 * var(--unit)); top: calc(1537.8936 * var(--unit)); width: calc(435.5313 * var(--unit)); --size: 43.0313; }
+.ceramics { left: calc(84.4308 * var(--unit)); top: calc(1585.8739 * var(--unit)); width: calc(286.3439 * var(--unit)); --size: 32.338; }
+.jewelry { left: calc(780.0798 * var(--unit)); top: calc(605.0957 * var(--unit)); width: calc(308.1314 * var(--unit)); }
+.sol { left: calc(26.676 * var(--unit)); top: calc(431.8385 * var(--unit)); width: calc(307.7656 * var(--unit)); }
