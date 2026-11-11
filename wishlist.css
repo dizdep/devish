@@ -72,4 +72,12 @@ h1 span { display: block; padding-left: calc(110 * var(--unit)); }
 .pouch { left: calc(788.0071 * var(--unit)); top: calc(1537.8936 * var(--unit)); width: calc(435.5313 * var(--unit)); --size: 43.0313; }
 .ceramics { left: calc(84.4308 * var(--unit)); top: calc(1585.8739 * var(--unit)); width: calc(286.3439 * var(--unit)); --size: 32.338; }
 .jewelry { left: calc(780.0798 * var(--unit)); top: calc(605.0957 * var(--unit)); width: calc(308.1314 * var(--unit)); }
-.sol { left: calc(26.676 * var(--unit)); top: calc(431.8385 * var(--unit)); width: calc(307.7656 * var(--unit)); }
+.sol {
+  left: calc(109.0839 * var(--unit));
+  top: calc(258.4539 * var(--unit));
+  width: calc(283.4958 * var(--unit));
+  height: calc(121.3919 * var(--unit));
+  transform: rotate(-61.5833deg);
+  transform-origin: center;
+}
+.manicure { left: calc(863.6636 * var(--unit)); top: calc(357.9467 * var(--unit)); width: calc(308.1314 * var(--unit)); }
